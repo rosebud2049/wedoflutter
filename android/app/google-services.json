@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "27505574922",
+    "project_id": "wedoflutter",
+    "storage_bucket": "wedoflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27505574922:android:4b398cf42b985f38898bf3",
+        "android_client_info": {
+          "package_name": "com.example.wedoflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27505574922-c61cerhcif0f42smmv5kn35qrfe1hk3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wedoflutter",
+            "certificate_hash": "15d610fbab85edb797fa43071512cb9a399d56f0"
+          }
+        },
+        {
+          "client_id": "27505574922-6d8q9g447r7j6nu4d2o22ikhsi351fd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnVs_QjZSyq3Gg5H2Cn9WoHmB-AKg8luQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27505574922-6d8q9g447r7j6nu4d2o22ikhsi351fd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

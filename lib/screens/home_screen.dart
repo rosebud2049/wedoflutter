@@ -1,6 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:wedoflutter/models/message_model.dart';
-import 'package:wedoflutter/components/custom_list_item.dart';
+import 'package:wedoflutter/provider/google_sign_in.dart';
+import 'package:wedoflutter/widgets/custom_list_item.dart';
 import 'package:wedoflutter/screens/chat_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,6 +12,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //var firestoreInstance = FirebaseFirestore
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -18,7 +23,17 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {},
         ),
         title: const Text("Inbox"),
-        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
+        actions: [
+          IconButton(
+            onPressed: () {
+              final provider =
+                  Provider.of<GoogleSignInProvider>(context, listen: false);
+              provider.logout();
+            },
+            icon: const Icon(Icons.logout),
+            //label: const Text('Logout'),
+          ),
+        ],
       ),
       body: ListView.builder(
         itemCount: chats.length,

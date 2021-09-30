@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:wedoflutter/models/message_model.dart';
 import 'package:wedoflutter/models/user_model.dart';
-import 'package:wedoflutter/components/chat/right_chat_bubble.dart';
-import 'package:wedoflutter/components/chat/right_chat_bubble_footer.dart';
-import 'package:wedoflutter/components/chat/left_chat_bubble.dart';
-import 'package:wedoflutter/components/chat/left_chat_bubble_footer.dart';
-import 'package:wedoflutter/components/chat/message_input_area.dart';
-import 'package:wedoflutter/components/chat/custom_appbar_title.dart';
+import 'package:wedoflutter/widgets/chat/right_chat_bubble.dart';
+import 'package:wedoflutter/widgets/chat/right_chat_bubble_footer.dart';
+import 'package:wedoflutter/widgets/chat/left_chat_bubble.dart';
+import 'package:wedoflutter/widgets/chat/left_chat_bubble_footer.dart';
+import 'package:wedoflutter/widgets/chat/message_input_area.dart';
+import 'package:wedoflutter/widgets/chat/custom_appbar_title.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({
